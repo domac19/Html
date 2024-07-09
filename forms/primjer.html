@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Korisnički obrazac</h1>
+    <form action="" method="POST" enctype="multipart/form-data" autocomplete="on">
+        <p>
+            <label for="ime">Upiši ime:</label>
+            <input type="text" id="ime" name="ime" placeholder="upiši ime" required>
+        </p>
+        <p>
+            <label for="sifra">Upiši lozinku:</label>
+            <input type="password" id="sifra" name="sifra" required>
+        </p>
+        <p>
+            <label for="adresa">Unesi adresu:</label>
+            <textarea name="adresa" id="adresa" cols="50" rows="10"></textarea>
+        </p>
+        <p>
+            Odaberi igru
+            <label for="igra"><br>
+                Hokej
+                <input type="checkbox" name="igra" id="igra" value="Hokej"><br>
+                Nogomet
+                <input type="checkbox" name="igra" id="igra" value="Nogomet"><br>
+                Badminton
+                <input type="checkbox" name="igra" id="igra" value="Badminton"><br>
+                Kriket
+                <input type="checkbox" name="igra" id="igra" value="Kriket"><br>
+                Odbojka
+                <input type="checkbox" name="igra" id="igra" value="Odbojka"><br>
+            </label>
+        </p>
+        <p>
+            Spol
+            <label for="spol"><br>
+                Muško
+                <input type="radio" name="spol" id="spol" value="Da" checked>
+                Žensko
+                <input type="radio" name="spol" id="spol" value="Da">
+            </label>
+        </p>
+        <p>
+            <label for="godine">Odaberi svoje godine:</label>
+            <input type="number" id="godine" name="godine" placeholder="Unesi godine">
+        </p>
+        <p>
+            <input type="file" name="doc" id="doc">
+        </p>
+        <button type="button">Click me</button>
+        <button type="reset" id="ocisti" name="ocisti">Reset</button>
+        <button type="submit" id="predaj" name="predaj">Predaj obrazac</button>
+    </form>
+</body>
+</html>
