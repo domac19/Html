@@ -1,0 +1,35 @@
+@import './base/color';
+@import './base/mixins';
+@import './else/reset';
+@import'./else/transcript';
+
+body{
+    font-family: $sans-serif;
+    font-size: $font-size;
+    text-align: $text-align;
+}
+
+header{
+    background-color: $boja2;
+}
+
+main{
+    section{
+        @include display-settings(inline-block, 25px, 15px auto);
+        border: $border;
+    }
+}
+
+footer{
+    background-color: $boja2;
+    section{
+        @include display-settings(inline-block, 25px, 15px auto);
+        @extend %stilovi;
+    }
+}
+
+%stilovi{
+    background-color: aqua;
+}
+
+@include boje-linkova($boja1,$boja6,$boja3,$boja4,$boja5);

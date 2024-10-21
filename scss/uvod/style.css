@@ -1,0 +1,55 @@
+body {
+  background-color: #eee;
+  color: #333;
+  font-family: Verdana, Tahoma, sans-serif;
+  margin: 0;
+}
+
+header, footer {
+  background-color: rgb(102, 101, 101);
+  color: #eee;
+}
+
+header {
+  text-align: center;
+}
+header h1 {
+  color: khaki;
+}
+header p {
+  font-size: 20px;
+}
+header a {
+  color: yellow;
+}
+
+section h1 {
+  font-family: "Courier New", Courier, monospace;
+  background-color: #333;
+}
+section p {
+  text-align: justify;
+}
+section a {
+  color: darkred;
+}
+section article {
+  background-color: khaki;
+}
+section article p {
+  color: white;
+}
+section article a {
+  color: white;
+}
+
+footer h1 {
+  color: yellow;
+}
+footer p {
+  font-size: 12px;
+}
+footer a {
+  color: greenyellow;
+  font-size: 20px;
+}/*# sourceMappingURL=style.css.map */

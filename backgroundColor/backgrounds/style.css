@@ -1,0 +1,17 @@
+body {
+    background-color: #ddd;
+    color: rgb(40, 40, 40);
+    font-family: Verdana, Tahoma, Geneva, sans-serif;
+    font-size: 20px;
+}
+
+p:first-of-type{
+    background: lightyellow url(../../images/light-bulb.png) center/contain no-repeat scroll;
+}
+
+p:nth-of-type(3){
+    background: url(../../images/orange.png) top right/100px no-repeat,
+     url(../../images/butterfly.png)  left center/contain no-repeat,
+     url(../../images/coffee-cup.png) center center/contain no-repeat,
+     lightblue url(../../images/pattern.png);
+}

@@ -1,0 +1,150 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Tahoma, sans-serif;
+    font-size: 16px;
+    color: #333;
+  }
+  h1 {
+    text-align: center;
+  }
+  
+  div {
+    background-color: #f93;
+    border: 4px solid #333;
+    border-radius: 100%;
+    font-size: 2em;
+    line-height: 145px;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 2em 0;
+    text-align: center;
+    position: relative;
+  }
+
+  @keyframes uvecaj {
+    0%{
+    }
+    50%{
+        transform: scale(2);
+    }
+  }
+
+  div:first-of-type{
+    animation: uvecaj 2s ease-in-out infinite;
+  }
+
+  @keyframes rotiraj{
+    0%{
+        left: 0;
+    }
+    25%{
+        left: 40px;
+        background-color: blue;
+    }
+    50%{
+        left: 100px;
+        transform: rotate(50deg);
+        background-color: blue;
+    }
+
+    100%{
+        left: 0;
+        transform: rotate(360deg);
+        background-color: brown;
+    }
+  }
+
+  div:nth-of-type(2):hover{
+    animation: rotiraj 3s ease-in-out infinite;
+  }
+
+  @keyframes identifier {
+    0%{
+        background-color: chartreuse;
+    }
+    50%{
+        transform: skew(2deg, 18deg);
+    }
+    100%{
+        background-color: aqua;
+    }
+  }
+
+  div:nth-of-type(3){
+    animation: identifier 3s ease-in-out alternate;
+  }
+
+  @keyframes allDirections {
+    0%{
+        top: 0;
+        left: 0;
+    }
+    50%{
+        top: 340px;
+        left: 480px;
+    }
+    100%{
+        top: 0;
+        left: 0;
+    }
+  }
+
+  div:nth-of-type(4){
+    animation: allDirections 6s ease-in-out infinite;
+  }
+
+
+  @keyframes all {
+    0%{
+        bottom: 0;
+        left: 0;
+    }
+    50%{
+        bottom: 340px;
+        left: 480px;
+    }
+    100%{
+        bottom: 0;
+        left: 0;
+    }
+  }
+
+  div:nth-of-type(5){
+    animation: all 6s ease-in-out infinite;
+  }
+
+  @keyframes colorized {
+    0%{
+    }
+    50%{
+        background-color: aqua;
+        transform: rotate3d(1,1,1, 360deg);
+    }
+    100%{
+        background-color: chocolate;
+    }
+  }
+
+  div:nth-of-type(6){
+    animation: colorized 5s ease-in-out infinite;
+  }
+
+  @keyframes dolje {
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 350px;
+        border-radius: 5%;
+        color: crimson;
+    }
+  }
+
+  div:nth-of-type(7){
+    animation: dolje 3s ease-in-out infinite;
+  }
+

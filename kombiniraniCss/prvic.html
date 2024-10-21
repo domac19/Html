@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domagoj Licitar</title>
+</head>
+<style>
+
+    /* h1 i p element imaju bolder tekst i plavu boju teksta */
+    h1, p {
+        font-weight: bolder;
+        color: blue;
+    }
+
+    /* Element koji ide odmah poslije h1 elementa ul ima smeđu boju onih točaka */
+    h1 + ul{
+        color: brown;
+    }
+
+    /* svi child elementi od section imaju p element s ovim svojstvima */
+    section > p{
+        font-size: x-large;
+    }
+
+    /* sve unutar bilo koje sekcije element p ima crvenu boju teksta */
+    section p{
+        color: red;
+    }
+
+    /* svi p elementi unutar sekcije i footera imaju boju teksta zelenu*/
+    footer section p{
+        color: green;
+    }
+</style>
+<body>
+    <header>
+        <h1>Domagoj Licitar</h1>
+        <ul>
+            <li><a href="#tkosamja">Tko sam ja?</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+    </header>
+    <main>
+        <section id="tkosamja">
+            <h2>TKO SAM JA?</h2>
+            <p>Radim skoro 2 i pol godine kao .NET developer i završio sam FOI.<br>
+            U slobodno vrijeme putujem kad stignem i istražujem svijet.</p>
+        </section>
+        <section id="portfolio">
+            <h3>Portfolio</h3>
+            <img src="" alt="slika1">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil labore autem quae neque ratione fugit laborum commodi, sequi dignissimos nam aliquam, facilis voluptatum repellat ut? Asperiores, veniam nisi aliquam officiis quam ut numquam commodi ducimus! Cumque repudiandae autem omnis fugit consequatur ea, voluptates ab magni pariatur, debitis, eius aperiam ipsa.</p>
+            <img src="" alt="slika2">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil labore autem quae neque ratione fugit laborum commodi, sequi dignissimos nam aliquam, facilis voluptatum repellat ut? Asperiores, veniam nisi aliquam officiis quam ut numquam commodi ducimus! Cumque repudiandae autem omnis fugit consequatur ea, voluptates ab magni pariatur, debitis, eius aperiam ipsa.</p>
+            <img src="" alt="slika3">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil labore autem quae neque ratione fugit laborum commodi, sequi dignissimos nam aliquam, facilis voluptatum repellat ut? Asperiores, veniam nisi aliquam officiis quam ut numquam commodi ducimus! Cumque repudiandae autem omnis fugit consequatur ea, voluptates ab magni pariatur, debitis, eius aperiam ipsa.</p>
+        </section>
+        <section id="kontakt">
+            <h4>Kontakt forma</h4>
+            <form action="" method="post" enctype="multipart/form-data">
+                <p>
+                    <label for="ime">Ime:*</label>
+                    <input type="text" id="ime" name="ime" placeholder="Upišite svoje ime" required><br>
+                </p>
+                <p>
+                    Trebaš li instrukcije iz programiranja ?<br>
+                </p>
+                <p>
+                    <label for="instrukcije">
+                        <input type="radio" id="instrukcije" name="instrukcije">Da
+                        <input type="radio" id="instrukcije" name="instrukcije">Ne
+                    </label><br>
+                </p>
+                <p>
+                    Trebam pomoć oko: <br>
+                </p>
+                <p>
+                    <label for="pomoc">
+                        <input type="checkbox" id="pomoc" name="pomoc">HTML
+                        <input type="checkbox" id="pomoc" name="pomoc">CSS
+                        <input type="checkbox" id="pomoc" name="pomoc">JS
+                    </label><br>
+                </p>
+                <p>
+                    Uploadat ću ovu datoteku:
+                </p>
+                <label for="datoteka">Datoteka</label>
+                <input type="file" id="datoteka" name="datoteka"><br>
+                <label for="lozinka">Lozinka:</label>
+                <input type="password" id="lozinka" name="lozinka"> <br>
+                <input type="submit" id="posalji" value="Pošalji" name="posalji">
+                <input type="reset" id="obrisi" value="Obriši" name="obrisi">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <p><small>Built by <a href="">Domagoj Licitar</a></small>
+                  <a href=""><img src="../../multimedia/images/logo/facebook.png" alt="facebook"></a></p>
+        </section>
+    </footer>
+</body>
+</html>

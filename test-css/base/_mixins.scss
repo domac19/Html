@@ -1,0 +1,21 @@
+@mixin boje-linkova($boja-pozadine,$boja-pozadine2,$boja,$boja-pozadine3,$activeboja){
+    a{
+        background-color: $boja-pozadine;
+        &:hover{
+            background-color: $boja-pozadine2;
+            color: $boja;
+        }
+        &:active{
+            background-color: $boja-pozadine3;
+            color: $activeboja;
+        }
+        @include display-settings(inline-block,20px,10px auto);
+    }
+}
+
+@mixin display-settings($block,$padding,$margin){
+    display: $block;
+    padding: $padding;
+    margin: $margin;
+    width: 266px;
+}

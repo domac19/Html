@@ -1,0 +1,41 @@
+body {
+	color: rgb(40, 40, 40);
+	font-family: Verdana, Tahoma, Geneva, sans-serif;
+	font-size: 16px;
+}
+
+h1{
+    text-align: center;
+}
+
+div{
+    background-color: orange;
+}
+
+.width1{
+    width: 50%;
+}
+
+.width2{
+    width: 400px;
+}
+
+.width3{
+    width: 20em;
+}
+
+.height1{
+    height: 70%;
+}
+
+.height2{
+    height: 140px;
+}
+
+.blue{
+    background-color: lightblue;
+}
+
+.height3{
+    height: 5em;
+}

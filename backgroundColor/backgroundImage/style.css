@@ -1,0 +1,12 @@
+body {
+    background-color: #ddd;
+    background-image: url(../../images/butterfly.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 30%;
+    background-attachment: fixed;
+    color: rgb(40, 40, 40);
+    font-family: Verdana, Tahoma, Geneva, sans-serif;
+    font-size: 20px;
+}
+

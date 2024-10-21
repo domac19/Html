@@ -1,0 +1,56 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  text-decoration: none;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  text-align: center;
+}
+
+header {
+  background-color: gray;
+}
+
+main section {
+  display: inline-block;
+  padding: 25px;
+  margin: 15px auto;
+  width: 266px;
+  border: 2px solid rgb(73, 73, 73);
+}
+
+footer {
+  background-color: gray;
+}
+footer section {
+  display: inline-block;
+  padding: 25px;
+  margin: 15px auto;
+  width: 266px;
+}
+
+footer section {
+  background-color: aqua;
+}
+
+a {
+  background-color: red;
+  display: inline-block;
+  padding: 20px;
+  margin: 10px auto;
+  width: 266px;
+}
+a:hover {
+  background-color: black;
+  color: orange;
+}
+a:active {
+  background-color: green;
+  color: darkred;
+}/*# sourceMappingURL=style.css.map */
